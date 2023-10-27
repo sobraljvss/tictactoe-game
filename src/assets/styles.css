@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+	width: 100vw;
+	max-width: 500px;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-oz-font-smoothing: grayscale;
+}
+
+table {
+	width: 100%;
+	aspect-ratio: 1;
+}
+
+td {
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+.occupiedSquares {
+	background-color: aquamarine;
+}
