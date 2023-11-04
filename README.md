@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-A tic tac toe game fully made with HTML, CSS and JavaScript. It's possible to play as both Player vs CPU and Player1 vs Player2 and there is a marker (X or O) selector between each round.
+A tic tac toe game fully made with HTML, CSS and JavaScript. It's possible to play as both Player vs CPU and Player1 vs Player2 between each round.
 
 #### Examples
 

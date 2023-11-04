@@ -2,28 +2,136 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+}
+
+html {
+	text-align: center;
+}
+
+body > .container {
+	margin: 0;
+	padding: 0;
+	max-width: none;
+
+	background-color: #5f9ea0;
 }
 
 html,
-body {
+body,
+.container,
+main {
 	min-height: 100vh;
 	width: 100vw;
-	max-width: 500px;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-oz-font-smoothing: grayscale;
 }
 
-table {
-	width: 100%;
+main {
+	max-width: 500px;
+}
+
+section {
+	width: 90%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#board {
+	width: 300px;
 	aspect-ratio: 1;
 }
 
-td {
-	border: 2px solid black;
+.boardSquares {
+	width: 100px;
+	height: 100px;
+
 	cursor: pointer;
+	border: 10px solid #008b8b;
+	background-color: #20b2aa;
+
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 50px;
 }
 
-.occupiedSquares {
-	background-color: aquamarine;
+.Xdom {
+	color: #ff0000;
+}
+
+.Odom {
+	color: #0000ff;
+}
+
+#gamemode {
+	height: 100px;
+	width: 80%;
+}
+
+#title {
+	margin: 0;
+	height: 25px;
+	width: 100%;
+
+	background-color: #008b8b;
+	color: #20b2aa;
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+	font-weight: bold;
+}
+
+form, .btn-group {
+	width: 100%;
+}
+
+#announcer {
+	width: 50%;
+
+	background-color: #008b8b;
+
+	color: #20b2aa;
+	font-size: calc(1em + 1vh);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+	font-weight: bold;
+}
+
+.optionsButtons, .btn-group > .optionsButtons {
+	width: 100%;
+	height: 50px;
+
+	background-color: #20b2aa;
+	border: 5px solid #008b8b;
+	border-radius: 0;
+
+	color: #008b8b;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+	font-weight: bold;
+}
+
+.optionsButtons:hover, form > .btn-group > .optionsButtons:hover {
+	background-color: #008b8b;
+	border-color: #20b2aa;
+	color: #20b2aa;
+
+	transition: color .5s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#resetButton {
+	width: 30%;
+}
+
+#resetButton > span {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+		sans-serif;
+	font-weight: bold;
 }

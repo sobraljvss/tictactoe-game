@@ -6,13 +6,26 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
--   [Bootstrap](https://getbootstrap.com/) and [jQuery](https://jquery.com/)
--   Game rules
--   Mark selector
--   PvP selector
--   Better style
+-   Player vs Player game mode
 
-## v1.0.0 - 2023-10-27
+## v1.0.0 - 2023-11-03
+
+### Added
+
+-   [Bootstrap](https://getbootstrap.com/)
+-   Game rules
+-   Game mode selector
+
+### Updated
+
+-   Selecting an occupied square no longer throws error
+-   Improved style
+
+### Deprecated
+
+-   Selected game mode deviant style
+
+## v0.1.0 - 2023-10-27
 
 ### Added
 
@@ -22,4 +35,3 @@ All notable changes to this project will be documented in this file.
 ### Deprecated
 
 -   Error when choosing occupied square
--   Random mark selection
