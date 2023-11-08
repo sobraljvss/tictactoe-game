@@ -1,12 +1,22 @@
 # Tic Tac Toe Game
 
-A tic tac toe game fully made with HTML, CSS and JavaScript. It's possible to play as both Player vs CPU and Player1 vs Player2 between each round.
+A tic tac toe game fully made with HTML, CSS and JavaScript. It's possible to play as both Player vs CPU and Player vs Player between each round. The CPU is smart enough to perceive a win opportunity and catch it.
 
 #### Examples
 
--   PC-like screen: coming soon
+-   PC-like screen:
 
--   Phone-like screen: coming soon
+<div style="display: flex; align-items: center; justify-content: space-around">
+    <img src="imgs/pc_screen_example_one.png" alt="PC-like screen: example one" style="width: 500px">
+    <img src="imgs/pc_screen_example_two.png" alt="PC-like screen: example two" style="width: 500px">
+</div>
+
+-   Mobile-like screen:
+
+<div style="display: flex; align-items: center; justify-content: space-around">
+    <img src="imgs/mobile_screen_example_one.png" alt="Mobile-like screen: example one" style="width: 200px">
+    <img src="imgs/mobile_screen_example_two.png" alt="Mobile-like screen: example two" style="width: 200px">
+</div>
 
 ## Contributing
 

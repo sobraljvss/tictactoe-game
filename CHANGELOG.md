@@ -2,11 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-# [Unreleased]
+# v1.1.0 - 2023-11-07
 
 ### Added
 
--   Player vs Player game mode
+-   Player vs CPU game mode
+-   More intuitive style details
+-   End game button
+
+### Updated
+
+-   Start button now disables game mode selector
 
 ## v1.0.0 - 2023-11-03
 

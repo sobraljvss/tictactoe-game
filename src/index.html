@@ -14,13 +14,13 @@
 		<title>Tic Tac Toe Game</title>
 	</head>
 	<body>
-		<div class="container d-flex flex-column align-items-center justify-content-center">
-			<main class="d-flex flex-column align-items-center justify-content-around">
+		<div class="container d-flex align-items-center justify-content-center">
+			<main>
 				<section>
-					<div id="gamemode">
-						<p id="title">Gamemode</p>
+					<div id="gamemodeSelector">
+						<p id="gamemodeSelectorTitle" class="fs-3">Game Mode</p>
 						<form>
-							<div class="btn-group" role="group" aria-label="gamemode">
+							<div class="btn-group" role="group" aria-label="game mode">
 								<input
 									class="btn-check"
 									type="radio"
@@ -29,7 +29,7 @@
 									value="pvp"
 									autocomplete="off"
 								/>
-								<label class="btn btn-colour-1 optionsButtons" for="pvp">
+								<label class="btn optionsButtons" for="pvp">
 									Player vs Player
 								</label>
 								<input
@@ -41,37 +41,39 @@
 									autocomplete="off"
 									checked
 								/>
-								<label class="btn btn-colour-1 optionsButtons" for="pvc">
-									Player vs CPU
-								</label>
+								<label class="btn optionsButtons" for="pvc"> Player vs CPU </label>
 							</div>
 						</form>
 					</div>
 				</section>
 				<section>
-					<p id="announcer"></p>
+					<p id="announcer" class="fs-2">Tic Tac Toe Time!</p>
 				</section>
-				<section>
-					<div id="board">
-						<div class="row justify-content-center align-items-center g-2 boardRows">
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-						</div>
-						<div class="row justify-content-center align-items-center g-2 boardRows">
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-						</div>
-						<div class="row justify-content-center align-items-center g-2 boardRows">
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-							<div class="col boardSquares"></div>
-						</div>
+				<section id="board">
+					<p id="gameLocker" class="fs-3">Press Start!</p>
+					<div class="row g-2 boardRows">
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
+					</div>
+					<div class="row g-2 boardRows">
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
+					</div>
+					<div class="row g-2 boardRows">
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
+						<div class="col boardSquares"></div>
 					</div>
 				</section>
 				<section>
-					<button id="resetButton" class="optionsButtons"><span>Reset game</span></button>
+					<button id="startButton" class="optionsButtons gameStateButtons">
+						<span class="fs-6">Start new game</span>
+					</button>
+					<button id="endButton" class="optionsButtons gameStateButtons">
+						<span class="fs-6">End game</span>
+					</button>
 				</section>
 			</main>
 		</div>

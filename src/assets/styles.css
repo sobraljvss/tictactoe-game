@@ -9,10 +9,6 @@
 	-webkit-user-drag: none;
 }
 
-html {
-	text-align: center;
-}
-
 body > .container {
 	margin: 0;
 	padding: 0;
@@ -34,104 +30,144 @@ main {
 
 main {
 	max-width: 500px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 section {
-	width: 90%;
+	width: 100%;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-#board {
-	width: 300px;
-	aspect-ratio: 1;
-}
+p, form > .btn-group > label, span, .boardSquares {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-.boardSquares {
-	width: 100px;
-	height: 100px;
-
-	cursor: pointer;
-	border: 10px solid #008b8b;
-	background-color: #20b2aa;
-
-	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
-	font-size: 50px;
+	text-align: center;
 }
 
-.Xdom {
-	color: #ff0000;
-}
-
-.Odom {
-	color: #0000ff;
-}
-
-#gamemode {
+#gamemodeSelector {
 	height: 100px;
 	width: 80%;
 }
 
-#title {
+#gamemodeSelectorTitle {
 	margin: 0;
-	height: 25px;
+	height: 40px;
 	width: 100%;
 
 	background-color: #008b8b;
 	color: #20b2aa;
 
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-		sans-serif;
-	font-weight: bold;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form, .btn-group {
 	width: 100%;
 }
 
-#announcer {
-	width: 50%;
-
-	background-color: #008b8b;
-
-	color: #20b2aa;
-	font-size: calc(1em + 1vh);
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-		sans-serif;
-	font-weight: bold;
+.btn-group > label {
+	font-size: calc(0.75em + 0.5vw);
 }
 
-.optionsButtons, .btn-group > .optionsButtons {
+.optionsButtons, .btn-group > .optionsButtons, form > .btn-group > .optionsButtons:hover {
+	padding: 0;
 	width: 100%;
 	height: 50px;
 
-	background-color: #20b2aa;
-	border: 5px solid #008b8b;
+	background-color: #008b8b;
+	color: #20b2aa;
+	border-width: 0;
 	border-radius: 0;
 
-	color: #008b8b;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
-		sans-serif;
-	font-weight: bold;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.optionsButtons:hover, form > .btn-group > .optionsButtons:hover {
-	background-color: #008b8b;
-	border-color: #20b2aa;
-	color: #20b2aa;
+.optionsButtons:hover, div > .btn-check:checked + .btn {
+	background-color: #20b2aa;
+	color: #008b8b;
 
 	transition: color .5s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-#resetButton {
+div > .btn-check:checked + .btn {
+	border: 5px solid #2f4f4f
+}
+
+#announcer {
+	width: 50%;
+
+	background-color: #008b8b;
+	color: #20b2aa;
+}
+
+#announcer, #gameLocker {
+	margin: 0;
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#board {
+	width: 40vh;
+	height: 40vh;
+
+	position: relative;
+	display: block;
+
+}
+
+#gameLocker {
+	width: 200px;
+	height: 40px;
+
+	position: absolute;
+	top: calc(50% - 20px);
+	left: calc(50% - 100px);
+	z-index: 1;
+
+	background-color: #2f4f4f;
+	color: #20b2aa;
+}
+
+.boardRows {
+	height: calc(100%/3);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.boardSquares {
+	height: 100%;
+
+	cursor: pointer;
+	border: 10px solid #008b8b;
+	background-color: #20b2aa;
+}
+
+.markedSquare {
+	color: #2f4f4f;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 8vh;
+}
+
+.gameStateButtons {
 	width: 30%;
 }
 
-#resetButton > span {
+.gameStateButtons > span {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
 		sans-serif;
-	font-weight: bold;
+}
+
+#endButton {
+	display: none;
 }
