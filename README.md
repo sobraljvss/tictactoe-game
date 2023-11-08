@@ -6,14 +6,14 @@ A tic tac toe game fully made with HTML, CSS and JavaScript. It's possible to pl
 
 -   PC-like screen:
 
-<div style="display: flex; align-items: center; justify-content: space-around">
-    <img src="imgs/pc_screen_example_one.png" alt="PC-like screen: example one" style="width: 500px">
-    <img src="imgs/pc_screen_example_two.png" alt="PC-like screen: example two" style="width: 500px">
+<div style="display: flex; align-items: center; justify-content: space-around; width: 100%">
+    <img src="imgs/pc_screen_example_one.png" alt="PC-like screen: example one" style="width: 350px">
+    <img src="imgs/pc_screen_example_two.png" alt="PC-like screen: example two" style="width: 350px">
 </div>
 
 -   Mobile-like screen:
 
-<div style="display: flex; align-items: center; justify-content: space-around">
+<div style="display: flex; align-items: center; justify-content: space-around; width: 100%">
     <img src="imgs/mobile_screen_example_one.png" alt="Mobile-like screen: example one" style="width: 200px">
     <img src="imgs/mobile_screen_example_two.png" alt="Mobile-like screen: example two" style="width: 200px">
 </div>
